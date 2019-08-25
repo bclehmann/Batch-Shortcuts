@@ -1,2 +1,2 @@
 @echo off
-bash -c "vi %1"
+start bash -c "vi %1"

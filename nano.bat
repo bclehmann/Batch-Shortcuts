@@ -1,2 +1,2 @@
 @echo off
-bash -c "nano %1"
+start bash -c "nano %1"
