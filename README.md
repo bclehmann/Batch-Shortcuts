@@ -11,12 +11,7 @@ Type `admincmd` or `adminps` in your CLI of choice to open an elevated prompt of
 
 ## Drip git Logs
 
-Type `lg`, it will open it up in a new CMD window.
-You will need to set an alias in your .gitconfig, I use this one that I yoinked from someone at work.
-
-    lg = log --graph --topo-order -C -M --pretty=format:\"<%Cred%h%Creset>\t%ad [%C(yellow)%an%Creset] %Cgreen%d%Creset %s\" --all --date=short
-
- You can set a default path in your environment variables, or you can just type `lg -d <git repo path>`
+Type `lg`, it will open it up in a new CMD window. You can set a default path in your environment variables, or you can just type `lg -d <git repo path>`
 
 
 ## Vi(m) and Nano Commands
