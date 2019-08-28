@@ -1,4 +1,3 @@
-
 # Batch-BS
  A couple batch files to make stuff easier, and a little trolling
 
@@ -29,3 +28,17 @@ I am aware everything else on this list uses command line arguments, but seeing 
 
 ## Trolling Stuff
 Admittedly, there ain't as much as I might like here, but you can type `h4x` to get a matrix sorta thing going on. The only difference between this command and `matrix`, is that `h4x` opens a new window.
+
+## Installation
+
+ 1. Add the folder that you cloned this git repo to your path [Simple Tutorial](https://www.itprotoday.com/cloud-computing/how-can-i-add-new-folder-my-system-path)
+ 2. Install bash, vim, and nano (Optional, only if you want these editors to work)
+     
+     a. Bash must be in your path
+	 
+	 b. vim and nano are almost certainly preinstalled with bash, if not, add them to the directory where `$SHELL` is contained (normally `/usr/bin`)
+	 
+	 c. If you installed github desktop, these are normally installed for you already
+ 3. Add the following environment variables [Tutorial](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html)
+	 
+	 a.  `defaultLgDir` (Optional, if you don't do this, you will need to specify the directory for `lg` every time)
