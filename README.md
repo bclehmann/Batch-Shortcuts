@@ -10,7 +10,7 @@ Type `admincmd` or `adminps` in your CLI of choice to open an elevated prompt of
 
 ## Drip git Logs
 
-Type `lg`, it will open it up in a new CMD window. You can set a default path in your environment variables, or you can just type `lg -d <git repo path>`
+Type `lg`, it will open it up in a new CMD window. You can also type `lg -d <git repo path>`
 
 
 ## Vi(m) and Nano Commands
@@ -39,6 +39,4 @@ Admittedly, there ain't as much as I might like here, but you can type `h4x` to 
 	 b. vim and nano are almost certainly preinstalled with bash, if not, add them to the directory where `$SHELL` is contained (normally `/usr/bin`)
 	 
 	 c. If you installed github desktop, these are normally installed for you already
- 3. Add the following environment variables [Tutorial](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html)
-	 
-	 a.  `defaultLgDir` (Optional, if you don't do this, you will need to specify the directory for `lg` every time)
+ 

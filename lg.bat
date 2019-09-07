@@ -1,6 +1,6 @@
 @echo off
 
-cd %defaultLgDir%
+::cd %defaultLgDir%
 
 
 if [%1]==[-d] cd %2
