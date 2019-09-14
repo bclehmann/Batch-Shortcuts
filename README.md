@@ -26,6 +26,15 @@ Type `exp` and give it something in stdin, and it will open Windows File explore
 
 I am aware everything else on this list uses command line arguments, but seeing as the built in `explorer` command can already do that, I didn't see the point of making an alias. If you already know the path, sure, do `explorer C:\` instead of `echo C:\ | exp` because that's just pointless.
 
+## passwordgen
+
+Type `passwordgen` and get a password. If you don't want a 32 character password, type `passwordgen 100` for a 100 character password, or any number you like. The charset is this:
+
+    abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^*`~,.-/
+    
+This was chosen to avoid issues, i.e. quotes and semicolons can be bad for connection strings, but I understand it may not be optimal for everything. Feel free to adjust the charset if you need.
+
+
 ## Trolling Stuff
 Admittedly, there ain't as much as I might like here, but you can type `h4x` to get a matrix sorta thing going on. The only difference between this command and `matrix`, is that `h4x` opens a new window.
 
