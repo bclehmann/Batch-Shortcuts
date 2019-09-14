@@ -32,7 +32,7 @@ goto loop
 	goto :eof
 
 :RandomGen
-	dotnet RNG.dll bytes=2 > tmpFile 
+	dotnet "%~dp0/RNG.dll" bytes=2 > tmpFile 
 	set /p temp= < tmpFile 
 	del tmpFile 
 	set /A "rand=%temp%"
