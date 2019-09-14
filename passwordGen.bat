@@ -1,6 +1,7 @@
 @echo off
 setlocal ENABLEDELAYEDEXPANSION
 SET /A "length=32"
+SET /A "bitspace=65536"
 
 if NOT [%1]==[] set /A "length=%1"
 
@@ -18,7 +19,7 @@ if NOT %i% LSS %length% goto end
 	set RET=cont
 	goto :RandomGen
 	:cont
-		set /A "rand=%rand% * 76 / 32768"
+		set /A "rand=%rand% * 76 / %bitspace%"
 		set out=%out%!charset:~%rand%,1!
 
 
@@ -31,5 +32,9 @@ goto loop
 	goto :eof
 
 :RandomGen
-	set /A "rand=%RANDOM%"
+	dotnet RNG.dll bytes=2 > tmpFile 
+	set /p temp= < tmpFile 
+	del tmpFile 
+	set /A "rand=%temp%"
+	::echo %rand%
 	goto %RET%
