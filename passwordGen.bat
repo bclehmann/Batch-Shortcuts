@@ -1,5 +1,5 @@
 @echo off
-setlocal ENABLEDELAYEDEXPANSION
+REM setlocal ENABLEDELAYEDEXPANSION
 REM SET /A "length=32"
 REM SET /A "bitspace=65536"
 
@@ -38,7 +38,8 @@ REM :RandomGen
 	REM set /A "rand=%temp%"
 	REM ::echo %rand%
 	REM goto %RET%
-	
-dotnet "%~dp0/NetCorePasswordgen.dll" %* > tmpFile 
-type tmpFile
-del tmpFile
+
+set "fileName=%temp%\__pwdgen__%RANDOM%_%RANDOM%_%RANDOM%_%RANDOM%_%RANDOM%_%RANDOM%_%RANDOM%_%RANDOM%.txt"
+dotnet "%~dp0/NetCorePasswordgen.dll" %* > %fileName%
+type %fileName%
+del %fileName%
