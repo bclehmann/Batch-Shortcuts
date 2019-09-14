@@ -34,6 +34,8 @@ Type `passwordgen` and get a password. If you don't want a 32 character password
     
 This was chosen to avoid issues, i.e. quotes and semicolons can be bad for connection strings, but I understand it may not be optimal for everything. Feel free to adjust the charset if you need.
 
+**Since this was written all in Batch, I strongly discourage this for encryption keys, get that from a known cryptographically secure source.**
+
 
 ## Trolling Stuff
 Admittedly, there ain't as much as I might like here, but you can type `h4x` to get a matrix sorta thing going on. The only difference between this command and `matrix`, is that `h4x` opens a new window.
