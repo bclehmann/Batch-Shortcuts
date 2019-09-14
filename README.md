@@ -32,9 +32,7 @@ Type `passwordgen` and get a password. If you don't want a 32 character password
 
     abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^*`~,.-/
     
-This was chosen to avoid issues, i.e. quotes and semicolons can be bad for connection strings, but I understand it may not be optimal for everything. Feel free to adjust the charset if you need.
-
-**Since this was written all in Batch, I strongly discourage this for encryption keys, get that from a known cryptographically secure source.**
+This was chosen to avoid issues, i.e. quotes and semicolons can be bad for connection strings, but I understand it may not be optimal for everything. Feel free to adjust the charset if you need. This uses .NET Core for its cryptographically secure randomness, specifically `RNGCryptoServiceProvider.GetBytes(byte[] bytes)` Please feel free to adjust this as well. This does mean you need the .NET core runtime, but I don't think thats a big ask.
 
 
 ## Trolling Stuff
@@ -50,4 +48,6 @@ Admittedly, there ain't as much as I might like here, but you can type `h4x` to 
 	 b. vim and nano are almost certainly preinstalled with bash, if not, add them to the directory where `$SHELL` is contained (normally `/usr/bin`)
 	 
 	 c. If you installed github desktop, these are normally installed for you already
+ 3. Install .NET Core runtime (Optional, only if you want passwordgen to work)
  
+     a. This is probably installed already
