@@ -34,7 +34,7 @@ Type `passwordgen` and get a password. If you don't want a 32 character password
     
 This was chosen to avoid issues, i.e. quotes and semicolons can be bad for connection strings, but I understand it may not be optimal for everything. Feel free to adjust the charset if you need. This uses .NET Core for its cryptographically secure randomness, specifically `RNGCryptoServiceProvider.GetBytes(byte[] bytes)` Please feel free to adjust this as well. This does mean you need the .NET core runtime, but I don't think thats a big ask.
 
-If you want a different charset, just specify in the command line arguments. `passwordgen alpanumeric` will use [a-zA-Z0-9], and you can also specify your own with `passwordgen charset=🔥💯👈👉🖖🤘🕶💦♠♥♦♣🃏✏🍆🌮` or any other symbols. If you use emojis or any non-ASCII symbol, you could have fun getting it to work with your shell.
+If you want a different charset, just specify in the command line arguments. `passwordgen alpanumeric` will use `[a-zA-Z0-9]`, and you can also specify your own with `passwordgen charset=🔥💯👈👉🖖🤘🕶💦♠♥♦♣🃏✏🍆🌮` or any other symbols. If you use emojis or any non-ASCII symbol, you could have fun getting it to work with your shell.
 
 
 ## Trolling Stuff
