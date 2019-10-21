@@ -55,6 +55,6 @@ Admittedly, there ain't as much as I might like here, but you can type `h4x` to 
      a. This is probably installed already
      
 ---
-![Logo](/images/dancclogo.png)
+![Logo](/images/logo_full.png)
 
 # Made by Where 1
