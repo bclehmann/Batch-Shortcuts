@@ -1,2 +1,2 @@
 @echo off
-start bash -c "nano %1"
+"C:\Program Files\Git\git-bash.exe" -c "nano %1"

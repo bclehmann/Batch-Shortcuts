@@ -1,2 +1,2 @@
 @echo off
-start bash -c "vi %1"
+"C:\Program Files\Git\git-bash.exe" -c "vi %1"
